@@ -1,0 +1,103 @@
+<div class="range-group">
+  <h4 class="subtitle">Range</h4>
+  <h3
+    class="percent"
+    [ngStyle]="{ 'background-color' : rangeBgColor }"
+  >
+    <span *ngIf="hasValidData" class="percent_range percent_range--min">
+      {{min}}%
+    </span>
+    <span class="percent_range percent_range--divider">
+      {{ (hasValidData) ? '-' : 'N/A'}}
+    </span>
+    <span *ngIf="hasValidData" class="percent_range percent_range--max">
+      {{max}}%
+    </span>
+  </h3>
+  <div
+    class="range-diff"
+    [ngStyle]="{ 'background-color' : rangeDiffBgColor, 'color': rangeDiffColor }">
+    {{(hasValidData) ? rangeDiff : '0' }}%
+  </div>
+</div>
+<div *ngIf="escape && escape.available">
+  <h4 class="section-title">Escape Option</h4>
+  <p
+    class="section-paragraph"
+    *ngFor="let option of escape.options">
+    {{option}}
+  </p>
+</div>
+<button *ngIf="hasValidData" class="section-title section-button" (click)="togglePercentTable()">
+  Press to {{minimumKillPercentagesHidden ? 'Show' : 'Hide' }} Minimum Percentages by Stage
+</button>
+<div
+  class="minimum-kill-percentages"
+  [ngClass]="{
+    'minimum-kill-percentages-hidden': minimumKillPercentagesHidden
+  }"
+>
+  <div class="range-group">
+    <div class="stage-select-wrapper">
+      <select
+        [(ngModel)]="selectedStage"
+        (change)="selectedStageChanged()"
+        class="stage-select"
+      >
+        <option
+          *ngFor="let stage of stages"
+          [ngValue]="stage"
+        >
+          {{stage.name}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2" rowspan="3">Rage</th>
+        <th colspan="5">Ink</th>
+      </tr>
+      <tr>
+        <th
+          *ngFor="let title of selectedStage.table.titles; let titleIndex = index"
+        >
+          {{title}}
+        </th>
+      </tr>
+      <tr>
+        <th
+          *ngFor="let heading of selectedStage.table.headings; let headingIndex = index"
+        >
+          {{heading}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rowCells of selectedStage.table.rows; let rowIndex = index">
+        <td
+          *ngFor="let cell of rowCells; let cellIndex = index"
+          [attr.rowspan]="(cellIndex == 0 && rowIndex != 0 && cell.indexOf('%') > -1) ? 2 : 1"
+          [ngStyle]="{
+            'background-color': rageColor(cell),
+            'color': rageColorContrast(cell),
+            'border-color': rageColorContrast(cell)
+          }"
+        >
+          <span
+            [ngClass]="{
+              'rage-span': isRageCell(cell)
+            }"
+            [ngStyle]="{
+              'background-color': rageCellColor(cell),
+              'color': rageCellColorContrast(cell)
+            }"
+          >
+            {{ cell }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

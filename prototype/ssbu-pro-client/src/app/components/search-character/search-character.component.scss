@@ -1,0 +1,50 @@
+:host {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 100%;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--dark-red-hex);
+  }
+}
+
+input {
+  display: block;
+  appearance: none;
+  outline: none;
+  background-color: var(--white-hex);
+  color: var(--black-hex);
+  border: none;
+  padding: 6px 12px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 0;
+  box-shadow: inset -2px -2px 0 rgba(var(--black-rgb-val), 0.2), inset -4px -4px 0 rgba(var(--black-rgb-val), 0.2);
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+::placeholder {
+  // color: rgba(var(--dark-red-rgb-val), 0.5);
+  font-style: italic;
+}

@@ -1,0 +1,29 @@
+div {
+  padding: 8px 24px;
+}
+
+div::ng-deep p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--black-hex);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+div::ng-deep strong {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+div::ng-deep .good {
+  color: var(--good-color);
+}
+
+div::ng-deep .bad {
+  color: var(--bad-color);
+}
+

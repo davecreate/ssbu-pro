@@ -1,0 +1,397 @@
+{
+  "MARIO": {
+    "left": 2,
+    "top": -45,
+    "scale": 96
+  },
+  "DONKEY_KONG": {
+    "left": -45,
+    "top": -42,
+    "scale": 108
+  },
+  "LINK": {
+    "left": -73,
+    "top": 29,
+    "scale": 217
+  },
+  "SAMUS": {
+    "left": -31,
+    "top": 90,
+    "scale": 226
+  },
+  "DARK_SAMUS": {
+    "left": -45,
+    "top": 124,
+    "scale": 221
+  },
+  "YOSHI": {
+    "left": -56,
+    "top": -29,
+    "scale": 85
+  },
+  "KIRBY": {
+    "left": -41,
+    "top": -65,
+    "scale": 71
+  },
+  "FOX": {
+    "left": -32,
+    "top": 11,
+    "scale": 142
+  },
+  "PIKACHU": {
+    "left": -37,
+    "top": -64,
+    "scale": 80
+  },
+  "LUIGI": {
+    "left": -48,
+    "top": -31,
+    "scale": 104
+  },
+  "NESS": {
+    "left": -44,
+    "top": -41,
+    "scale": 100
+  },
+  "CAPTAIN_FALCON": {
+    "left": -69,
+    "top": 110,
+    "scale": 221
+  },
+  "JIGGLYPUFF": {
+    "left": -43,
+    "top": -93,
+    "scale": 62
+  },
+  "PEACH": {
+    "left": -31,
+    "top": 62,
+    "scale": 214
+  },
+  "DAISY": {
+    "left": -29,
+    "top": 63,
+    "scale": 214
+  },
+  "BOWSER": {
+    "left": -69,
+    "top": -93,
+    "scale": 108
+  },
+  "ICE_CLIMBERS": {
+    "left": -37,
+    "top": -96,
+    "scale": 98
+  },
+  "SHEIK": {
+    "left": 2,
+    "top": 102,
+    "scale": 224
+  },
+  "ZELDA": {
+    "left": -20,
+    "top": 160,
+    "scale": 251
+  },
+  "DR_MARIO": {
+    "left": -32,
+    "top": -22,
+    "scale": 113
+  },
+  "PICHU": {
+    "left": -35,
+    "top": -90,
+    "scale": 71
+  },
+  "FALCO": {
+    "left": -51,
+    "top": 15,
+    "scale": 186
+  },
+  "MARTH": {
+    "left": -60,
+    "top": 205,
+    "scale": 305
+  },
+  "LUCINA": {
+    "left": -42,
+    "top": 208,
+    "scale": 305
+  },
+  "YOUNG_LINK": {
+    "left": -62,
+    "top": -2,
+    "scale": 152
+  },
+  "GANONDORF": {
+    "left": -32,
+    "top": 164,
+    "scale": 253
+  },
+  "MEWTWO": {
+    "left": -50,
+    "top": 4,
+    "scale": 113
+  },
+  "ROY": {
+    "left": 7,
+    "top": 84,
+    "scale": 246
+  },
+  "CHROM": {
+    "left": -3,
+    "top": 193,
+    "scale": 296
+  },
+  "MR_GAME_AND_WATCH": {
+    "left": -32,
+    "top": -76,
+    "scale": 68
+  },
+  "META_KNIGHT": {
+    "left": -41,
+    "top": -128,
+    "scale": 93
+  },
+  "PIT": {
+    "left": -14,
+    "top": 47,
+    "scale": 226
+  },
+  "DARK_PIT": {
+    "left": -62,
+    "top": 75,
+    "scale": 240
+  },
+  "ZERO_SUIT_SAMUS": {
+    "left": -29,
+    "top": 130,
+    "scale": 275
+  },
+  "WARIO": {
+    "left": -33,
+    "top": -47,
+    "scale": 92
+  },
+  "SNAKE": {
+    "left": -117,
+    "top": 137,
+    "scale": 234
+  },
+  "IKE": {
+    "left": -8,
+    "top": 110,
+    "scale": 248
+  },
+  "POKEMON_TRAINER": {
+    "left": -38,
+    "top": 54,
+    "scale": 188
+  },
+  "DIDDY_KONG": {
+    "left": -53,
+    "top": -54,
+    "scale": 89
+  },
+  "LUCAS": {
+    "left": -50,
+    "top": -54,
+    "scale": 98
+  },
+  "SONIC": {
+    "left": -45,
+    "top": -29,
+    "scale": 109
+  },
+  "KING_DEDEDE": {
+    "left": -47,
+    "top": -40,
+    "scale": 108
+  },
+  "OLIMAR": {
+    "left": -30,
+    "top": -82,
+    "scale": 95
+  },
+  "LUCARIO": {
+    "left": -38,
+    "top": 20,
+    "scale": 151
+  },
+  "R_O_B": {
+    "left": -70,
+    "top": 6,
+    "scale": 126
+  },
+  "TOON_LINK": {
+    "left": -28,
+    "top": -70,
+    "scale": 92
+  },
+  "WOLF": {
+    "left": -50,
+    "top": -6,
+    "scale": 128
+  },
+  "VILLAGER": {
+    "left": -35,
+    "top": -55,
+    "scale": 97
+  },
+  "MEGA_MAN": {
+    "left": -22,
+    "top": -32,
+    "scale": 122
+  },
+  "WII_FIT_TRAINER": {
+    "left": -58,
+    "top": 205,
+    "scale": 302
+  },
+  "ROSALINA_AND_LUMA": {
+    "left": 2,
+    "top": 65,
+    "scale": 200
+  },
+  "LITTLE_MAC": {
+    "left": -6,
+    "top": 81,
+    "scale": 234
+  },
+  "GRENINJA": {
+    "left": -12,
+    "top": -43,
+    "scale": 132
+  },
+  "PALUTENA": {
+    "left": -36,
+    "top": 176,
+    "scale": 345
+  },
+  "PAC_MAN": {
+    "left": -35,
+    "top": -60,
+    "scale": 73
+  },
+  "ROBIN": {
+    "left": -28,
+    "top": 120,
+    "scale": 275
+  },
+  "SHULK": {
+    "left": 16,
+    "top": 57,
+    "scale": 264
+  },
+  "BOWSER_JR": {
+    "left": -39,
+    "top": -38,
+    "scale": 98
+  },
+  "DUCK_HUNT": {
+    "left": -27,
+    "top": -149,
+    "scale": 105
+  },
+  "RYU": {
+    "left": -43,
+    "top": 209,
+    "scale": 304
+  },
+  "KEN": {
+    "left": -53,
+    "top": 169,
+    "scale": 266
+  },
+  "CLOUD": {
+    "left": 34,
+    "top": 134,
+    "scale": 295
+  },
+  "CORRIN": {
+    "left": -69,
+    "top": 176,
+    "scale": 283
+  },
+  "BAYONETTA": {
+    "left": -28,
+    "top": 153,
+    "scale": 282
+  },
+  "INKLING": {
+    "left": -48,
+    "top": -12,
+    "scale": 108
+  },
+  "RIDLEY": {
+    "left": 14,
+    "top": -72,
+    "scale": 148
+  },
+  "SIMON": {
+    "left": -7,
+    "top": 193,
+    "scale": 292
+  },
+  "RICHTER": {
+    "left": -28,
+    "top": 171,
+    "scale": 338
+  },
+  "KING_K_ROOL": {
+    "left": -45,
+    "top": -11,
+    "scale": 122
+  },
+  "ISABELLE": {
+    "left": -39,
+    "top": -72,
+    "scale": 88
+  },
+  "INCINEROAR": {
+    "left": -14,
+    "top": 13,
+    "scale": 143
+  },
+  "PIRANHA_PLANT": {
+    "left": -51,
+    "top": -51,
+    "scale": 70
+  },
+  "JOKER": {
+    "left": -34,
+    "top": 236,
+    "scale": 338
+  },
+  "HERO": {
+    "left": -96,
+    "top": 202,
+    "scale": 273
+  },
+  "BANJO_AND_KAZOOIE": {
+    "left":0,
+    "top":-92,
+    "scale":132
+  },
+  "TERRY": {
+    "left":5,
+    "top":242,
+    "scale":338
+  },
+  "MII_BRAWLER": {
+    "left": -51,
+    "top": -16,
+    "scale": 114
+  },
+  "MII_SWORDFIGHTER": {
+    "left": -31,
+    "top": -46,
+    "scale": 104
+  },
+  "MII_GUNNER": {
+    "left": -44,
+    "top": -34,
+    "scale": 104
+  }
+}

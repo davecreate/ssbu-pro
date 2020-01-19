@@ -1,0 +1,7 @@
+ID,Effect
+None,Nothing
+Wind,Pushes object away
+Hit,Inflicts minor hitstun
+Freeze,Object becomes stuck in place
+Explode,Object explodes on contact
+Wind+Hit,Object is pushed away and has a hitbox

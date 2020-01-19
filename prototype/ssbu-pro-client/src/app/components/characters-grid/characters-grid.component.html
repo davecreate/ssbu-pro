@@ -1,0 +1,31 @@
+<div
+  class="wrapper"
+>
+  <div class="bg-color">
+    <div class="bg-gradient"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-line bg-line--left" [ngStyle]="{
+      'width.px': bgLineWidth,
+      'height.px': bgLineHeight
+    }"></div>
+    <div class="bg-line bg-line--right" [ngStyle]="{
+      'width.px': bgLineWidth,
+      'height.px': bgLineHeight
+    }"></div>
+  </div>
+  <a
+    #characterEntry
+    class="character-entry"
+    *ngFor="let entry of entries | async"
+    [routerLink]="dasherizedUrl(entry.id)"
+  >
+    <ssp-character-crop
+      [percentLeft]="entry.offset.left"
+      [percentTop]="entry.offset.top"
+      [percentScale]="entry.offset.scale"
+      [characterId]="entry.id"
+      [characterName]="entry.name"
+    >
+    </ssp-character-crop>
+  </a>
+</div>

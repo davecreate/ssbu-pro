@@ -1,0 +1,46 @@
+{
+  "BATTLEFIELD": {
+    "id": "BATTLEFIELD",
+    "name": "Battlefield"
+  },
+  "FINAL_DESTINATION": {
+    "id": "FINAL_DESTINATION",
+    "name": "Final Destination"
+  },
+  "KALOS_LEAGUE": {
+    "id": "KALOS_LEAGUE",
+    "name": "Kalos League"
+  },
+  "LYLAT_CRUISE": {
+    "id": "LYLAT_CRUISE",
+    "name": "Lylat Cruise"
+  },
+  "POKEMON_STADIUM_1": {
+    "id": "POKEMON_STADIUM_1",
+    "name": "Pokemon Stadium 1"
+  },
+  "POKEMON_STADIUM_2": {
+    "id": "POKEMON_STADIUM_2",
+    "name": "Pokemon Stadium 2"
+  },
+  "SMASHVILLE": {
+    "id": "SMASHVILLE",
+    "name": "Smashville"
+  },
+  "TOWN_AND_CITY": {
+    "id": "TOWN_AND_CITY",
+    "name": "Town and City"
+  },
+  "UNOVA_LEAGUE": {
+    "id": "UNOVA_LEAGUE",
+    "name": "Unova League"
+  },
+  "YOSHI_ISLAND": {
+    "id": "YOSHI_ISLAND",
+    "name": "Yoshi Island"
+  },
+  "YOSHI_STORY": {
+    "id": "YOSHI_STORY",
+    "name": "Yoshi Story"
+  }
+}

@@ -1,0 +1,40 @@
+<ssp-page-title></ssp-page-title>
+<div class="wrapper">
+  <div
+    *ngFor="let characterHint of characterHints | async"
+    class="character-info">
+    <div class="character-image">
+      <ssp-character-crop
+        [squareRatio]="true"
+        [characterId]="characterHint.id"
+      >
+      </ssp-character-crop>
+    </div>
+    <div class="character-title">
+      <div class="character-title-mask"></div>
+      <h1 class="character-name">
+        {{ characterHint.name }}
+      </h1>
+    </div>
+    <div class="hints">
+      <div *ngFor="let hint of characterHint.hints" class="hint">
+        <h2 class="hint-title">{{hint.name}}</h2>
+        <ssp-hint-percent-with-stage
+          *ngIf="hint.id == hintId.BooYah"
+          [min]="hint.data.characterData.min"
+          [max]="hint.data.characterData.max"
+          [stages]="hint.data.stages"
+          [escape]="hint.data.characterData.escape"
+        ></ssp-hint-percent-with-stage>
+        <ssp-hint-move-interactions
+          *ngIf="hint.id == hintId.MoveInteractions"
+          [moves]="hint.data.moves"
+        ></ssp-hint-move-interactions>
+        <ssp-text-with-image
+          *ngIf="isTextHint(hint.id)"
+          [text]="hint.data.label"
+        ></ssp-text-with-image>
+      </div>
+    </div>
+  </div>
+</div>

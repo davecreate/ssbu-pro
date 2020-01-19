@@ -1,0 +1,47 @@
+<div
+  #cropMask
+  class="character-mask"
+  [ngClass]="{'character-mask--square': squareRatio }"
+>
+  <div
+    class="character-ratio"
+    [ngStyle]="{'left.%': percentLeft, 'top.%': percentTop }"
+  >
+    <picture>
+      <source media="(max-width: 460px)" [srcset]="'/assets/characters/' + characterId + '@1x.png'">
+      <source media="(min-width: 1920px)" [srcset]="'/assets/characters/' + characterId + '@3x.png'">
+      <source [srcset]="'/assets/characters/' + characterId + '@2x.png'">
+      <img
+        [src]="'/assets/characters/' + characterId + '@2x.png'"
+        [ngStyle]="{'height.%': percentScale,  'filter': imgShadowFilter }"
+      />
+    </picture>
+  </div>
+  <ng-container *ngIf="characterName">
+    <h6
+      class="character-name character-name--stroked"
+      aria-hidden="true"
+      [ngStyle]="{
+        'font-size.px': nameFontSize,
+        'letter-spacing.px': letterSpacingSize,
+        '-webkit-text-stroke': textStroke
+      }"
+    >
+      {{characterName}}
+    </h6>
+    <h6
+      class="character-name"
+      [ngStyle]="{
+        'font-size.px': nameFontSize,
+        'letter-spacing.px': letterSpacingSize
+      }"
+    >
+      {{characterName}}
+    </h6>
+    <div
+      class="character-outline"
+      [ngStyle]="{'border': outlineBorderString }"
+    >
+    </div>
+  </ng-container>
+</div>

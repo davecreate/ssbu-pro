@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  flex: 1;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 42px;
+  padding-bottom: 52px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.page-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+.content {
+  min-width: 100%;
+}
+
+@media only screen and (min-width: 1100px) {
+  .wrapper {
+    max-width: 1268px;
+    justify-content: center;
+  }
+}

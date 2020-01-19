@@ -1,0 +1,60 @@
+.wrapper {
+  position: relative;
+}
+
+.frame {
+  position: relative;
+  width: 522px;
+  height: 344px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+  }
+}
+
+.main {
+  display: inline-flex;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.main:active {
+  .save-btn {
+    background-color: greenyellow;
+  }
+}
+
+.save-btn {
+  display: flex;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: yellow;
+  transition: background-color 100ms linear;
+  border: none;
+  border-left: solid 1px black;
+  font-weight: bold;
+}
+
+.done {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background-color: green;
+  color: white;
+  padding: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.crop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 522px;
+}

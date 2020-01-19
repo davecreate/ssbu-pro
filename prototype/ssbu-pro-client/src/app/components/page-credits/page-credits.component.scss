@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  background-color: var(--white-hex);
+  font-family: 'Roboto', sans-serif;
+  color: var(--black-hex);
+  padding: 52px 24px;
+  max-width: 472px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+a,
+a:visited {
+  display: inline-block;
+  background-color: var(--yellow-hex);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2px;
+  color: var(--black-hex);
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 24px;
+  border: solid 1px var(--black-hex);
+}

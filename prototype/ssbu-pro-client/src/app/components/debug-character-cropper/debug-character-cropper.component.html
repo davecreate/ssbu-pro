@@ -1,0 +1,28 @@
+<div class="main" (click)="saveProps()">
+  <div class="wrapper">
+    <div class="frame">
+      <img
+        [ngStyle]="{'transform': referenceTransform, 'opacity': referenceOpacity }"
+        src="assets/character-cropper-reference.png" />
+    </div>
+    <div
+      class="crop"
+      [ngStyle]="{'opacity': cropOpacity }"
+    >
+      <ssp-character-crop
+        [percentLeft]="cropPercentLeft"
+        [percentTop]="cropPercentTop"
+        [percentScale]="cropPercentScale"
+        [characterId]="characterId"
+      >
+      </ssp-character-crop>
+    </div>
+  </div>
+  <div class="save-btn">Save</div>
+  <div
+    *ngIf="savedOffsets[characterId]"
+    class="done"
+  >
+    DONE
+  </div>
+</div>

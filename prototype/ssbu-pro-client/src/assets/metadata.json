@@ -1,0 +1,330 @@
+{
+  "MARIO": {
+    "id": "MARIO",
+    "name": "Mario"
+  },
+  "DONKEY_KONG": {
+    "id": "DONKEY_KONG",
+    "name": "Donkey Kong"
+  },
+  "LINK": {
+    "id": "LINK",
+    "name": "Link"
+  },
+  "SAMUS": {
+    "id": "SAMUS",
+    "name": "Samus"
+  },
+  "DARK_SAMUS": {
+    "id": "DARK_SAMUS",
+    "name": "Dark Samus"
+  },
+  "YOSHI": {
+    "id": "YOSHI",
+    "name": "Yoshi"
+  },
+  "KIRBY": {
+    "id": "KIRBY",
+    "name": "Kirby"
+  },
+  "FOX": {
+    "id": "FOX",
+    "name": "Fox"
+  },
+  "PIKACHU": {
+    "id": "PIKACHU",
+    "name": "Pikachu"
+  },
+  "LUIGI": {
+    "id": "LUIGI",
+    "name": "Luigi"
+  },
+  "NESS": {
+    "id": "NESS",
+    "name": "Ness"
+  },
+  "CAPTAIN_FALCON": {
+    "id": "CAPTAIN_FALCON",
+    "name": "Captain Falcon"
+  },
+  "JIGGLYPUFF": {
+    "id": "JIGGLYPUFF",
+    "name": "Jigglypuff"
+  },
+  "PEACH": {
+    "id": "PEACH",
+    "name": "Peach"
+  },
+  "DAISY": {
+    "id": "DAISY",
+    "name": "Daisy"
+  },
+  "BOWSER": {
+    "id": "BOWSER",
+    "name": "Bowser"
+  },
+  "ICE_CLIMBERS": {
+    "id": "ICE_CLIMBERS",
+    "name": "Ice Climbers"
+  },
+  "SHEIK": {
+    "id": "SHEIK",
+    "name": "Sheik"
+  },
+  "ZELDA": {
+    "id": "ZELDA",
+    "name": "Zelda"
+  },
+  "DR_MARIO": {
+    "id": "DR_MARIO",
+    "name": "Dr. Mario"
+  },
+  "PICHU": {
+    "id": "PICHU",
+    "name": "Pichu"
+  },
+  "FALCO": {
+    "id": "FALCO",
+    "name": "Falco"
+  },
+  "MARTH": {
+    "id": "MARTH",
+    "name": "Marth"
+  },
+  "LUCINA": {
+    "id": "LUCINA",
+    "name": "Lucina"
+  },
+  "YOUNG_LINK": {
+    "id": "YOUNG_LINK",
+    "name": "Young Link"
+  },
+  "GANONDORF": {
+    "id": "GANONDORF",
+    "name": "Ganondorf"
+  },
+  "MEWTWO": {
+    "id": "MEWTWO",
+    "name": "Mewtwo"
+  },
+  "ROY": {
+    "id": "ROY",
+    "name": "Roy"
+  },
+  "CHROM": {
+    "id": "CHROM",
+    "name": "Chrom"
+  },
+  "MR_GAME_AND_WATCH": {
+    "id": "MR_GAME_AND_WATCH",
+    "name": "Mr. Game & Watch"
+  },
+  "META_KNIGHT": {
+    "id": "META_KNIGHT",
+    "name": "Meta Knight"
+  },
+  "PIT": {
+    "id": "PIT",
+    "name": "Pit"
+  },
+  "DARK_PIT": {
+    "id": "DARK_PIT",
+    "name": "Dark Pit"
+  },
+  "ZERO_SUIT_SAMUS": {
+    "id": "ZERO_SUIT_SAMUS",
+    "name": "Zero Suit Samus"
+  },
+  "WARIO": {
+    "id": "WARIO",
+    "name": "Wario"
+  },
+  "SNAKE": {
+    "id": "SNAKE",
+    "name": "Snake"
+  },
+  "IKE": {
+    "id": "IKE",
+    "name": "Ike"
+  },
+  "POKEMON_TRAINER": {
+    "id": "POKEMON_TRAINER",
+    "name": "Pokemon Trainer"
+  },
+  "POKEMON_TRAINER_SQUIRTLE": {
+    "id": "POKEMON_TRAINER_SQUIRTLE",
+    "name": "Squirtle"
+  },
+  "POKEMON_TRAINER_IVYSAUR": {
+    "id": "POKEMON_TRAINER_IVYSAUR",
+    "name": "Ivysaur"
+  },
+  "POKEMON_TRAINER_CHARIZARD": {
+    "id": "POKEMON_TRAINER_CHARIZARD",
+    "name": "Charizard"
+  },
+  "DIDDY_KONG": {
+    "id": "DIDDY_KONG",
+    "name": "Diddy Kong"
+  },
+  "LUCAS": {
+    "id": "LUCAS",
+    "name": "Lucas"
+  },
+  "SONIC": {
+    "id": "SONIC",
+    "name": "Sonic"
+  },
+  "KING_DEDEDE": {
+    "id": "KING_DEDEDE",
+    "name": "King DeDeDe"
+  },
+  "OLIMAR": {
+    "id": "OLIMAR",
+    "name": "Olimar"
+  },
+  "LUCARIO": {
+    "id": "LUCARIO",
+    "name": "Lucario"
+  },
+  "R_O_B": {
+    "id": "R_O_B",
+    "name": "R.O.B."
+  },
+  "TOON_LINK": {
+    "id": "TOON_LINK",
+    "name": "Toon Link"
+  },
+  "WOLF": {
+    "id": "WOLF",
+    "name": "Wolf"
+  },
+  "VILLAGER": {
+    "id": "VILLAGER",
+    "name": "Villager"
+  },
+  "MEGA_MAN": {
+    "id": "MEGA_MAN",
+    "name": "Mega Man"
+  },
+  "WII_FIT_TRAINER": {
+    "id": "WII_FIT_TRAINER",
+    "name": "Wii Fit Trainer"
+  },
+  "ROSALINA_AND_LUMA": {
+    "id": "ROSALINA_AND_LUMA",
+    "name": "Rosalina & Luna"
+  },
+  "LITTLE_MAC": {
+    "id": "LITTLE_MAC",
+    "name": "Little Mac"
+  },
+  "GRENINJA": {
+    "id": "GRENINJA",
+    "name": "Greninja"
+  },
+  "MII_BRAWLER": {
+    "id": "MII_BRAWLER",
+    "name": "Mii Brawler"
+  },
+  "MII_SWORDFIGHTER": {
+    "id": "MII_SWORDFIGHTER",
+    "name": "Mii Swordfighter"
+  },
+  "MII_GUNNER": {
+    "id": "MII_GUNNER",
+    "name": "Mii Gunner"
+  },
+  "PALUTENA": {
+    "id": "PALUTENA",
+    "name": "Palutena"
+  },
+  "PAC_MAN": {
+    "id": "PAC_MAN",
+    "name": "Pac-Man"
+  },
+  "ROBIN": {
+    "id": "ROBIN",
+    "name": "Robin"
+  },
+  "SHULK": {
+    "id": "SHULK",
+    "name": "Shulk"
+  },
+  "BOWSER_JR": {
+    "id": "BOWSER_JR",
+    "name": "Bowser Jr."
+  },
+  "DUCK_HUNT": {
+    "id": "DUCK_HUNT",
+    "name": "Duck Hunt"
+  },
+  "RYU": {
+    "id": "RYU",
+    "name": "Ryu"
+  },
+  "KEN": {
+    "id": "KEN",
+    "name": "Ken"
+  },
+  "CLOUD": {
+    "id": "CLOUD",
+    "name": "Cloud"
+  },
+  "CORRIN": {
+    "id": "CORRIN",
+    "name": "Corrin"
+  },
+  "BAYONETTA": {
+    "id": "BAYONETTA",
+    "name": "Bayonetta"
+  },
+  "INKLING": {
+    "id": "INKLING",
+    "name": "Inkling"
+  },
+  "RIDLEY": {
+    "id": "RIDLEY",
+    "name": "Ridley"
+  },
+  "SIMON": {
+    "id": "SIMON",
+    "name": "Simon"
+  },
+  "RICHTER": {
+    "id": "RICHTER",
+    "name": "Richter"
+  },
+  "KING_K_ROOL": {
+    "id": "KING_K_ROOL",
+    "name": "King K. Rool"
+  },
+  "ISABELLE": {
+    "id": "ISABELLE",
+    "name": "Isabelle"
+  },
+  "INCINEROAR": {
+    "id": "INCINEROAR",
+    "name": "Incineroar"
+  },
+  "PIRANHA_PLANT": {
+    "id": "PIRANHA_PLANT",
+    "name": "Piranha Plant"
+  },
+  "JOKER": {
+    "id": "JOKER",
+    "name": "Joker"
+  },
+  "HERO": {
+    "id": "HERO",
+    "name": "Hero"
+  },
+  "BANJO_AND_KAZOOIE": {
+    "id": "BANJO_AND_KAZOOIE",
+    "name": "Banjo & Kazooie"
+  },
+  "TERRY": {
+    "id": "TERRY",
+    "name": "Terry"
+  }
+}

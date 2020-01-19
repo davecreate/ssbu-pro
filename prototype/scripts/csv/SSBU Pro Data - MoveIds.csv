@@ -1,0 +1,30 @@
+MoveId,MoveName
+NEUTRAL_ATTACK,Neutral attack
+FORWARD_TILT,Forward tilt
+UP_TILT,Up tilt
+DOWN_TILT,Down tilt
+DASH_ATTACK,Dash attack
+FORWARD_SMASH,Forward smash
+UP_SMASH,Up smash
+DOWN_SMASH,Down smash
+NEUTRAL_AERIAL,Neutral aerial
+FORWARD_AERIAL,Forward aerial
+BACK_AERIAL,Back aerial
+UP_AERIAL,Up aerial
+DOWN_AERIAL,Down aerial
+GRAB,Grab
+PUMMEL,Pummel
+FORWARD_THROW,Forward throw
+BACK_THROW,Back throw
+UP_THROW,Up throw
+DOWN_THROW,Down throw
+FLOOR_ATTACK__FRONT,Floor attack (front)
+FLOOR_ATTACK__BACK,Floor attack (back)
+FLOOR_ATTACK__TRIP,Floor attack (trip)
+EDGE_ATTACK,Edge attack
+NEUTRAL_SPECIAL,Neutral special
+SIDE_SPECIAL,Side special
+UP_SPECIAL,Up special
+DOWN_SPECIAL,Down special
+FINAL_SMASH,Final Smash
+GRAB_AERIAL,Grab aerial
