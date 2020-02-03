@@ -2,41 +2,53 @@
   <img *ngIf="move.filename" class="move-img" [src]="'/assets/moves/' + move.filename" />
   <div class="text-section">
     <h4 class="title">{{ moveName(move) }}</h4>
-    <ul *ngIf="move.dashUnder?.length > 0" class="dash-under-list">
-      <li class="dash-under-item" *ngFor="let dash of move.dashUnder">
-        <span
-          class="action"
+    <div *ngFor="let variation of move.variations | keyvalue">
+      <div class="variation">
+      <h6 class="subtitle" *ngIf="variation.key">{{ variation.key }}</h6>
+      <ul class="dash-under-list">
+        <li class="dash-under-item" *ngIf="variation.value.dashUnder">
+          <span
+            class="action"
+            [ngClass]="{
+              'good': variation.value.dashUnder.value,
+              'bad': !variation.value.dashUnder.value
+            }"
+          >
+            {{ variation.value.dashUnder.value ? 'can' : 'cannot' }}
+          </span>
+          Dash Under
+        </li>
+        <li class="dash-under-item" *ngIf="variation.value.splatBomb">
+          <span class="action"
           [ngClass]="{
-            'good': dash.value,
-            'bad': !dash.value
-          }"
-        >
-          {{dash.value ? 'can' : 'cannot'}}
-        </span>
-        Dash Under
-        <span
-          class="caption"
-          *ngIf="dash.note"
-        >
-          — {{dash.note}}
-        </span>
-      </li>
-    </ul>
-  </div>
-  <div *ngIf="move.splattershot" class="splattershot">
-    <p class="splattershot-text">
-      <strong>Splattershot ({{move.splattershot?.effect}}) Effect</strong>
-      <span>— {{move.splattershot?.label?.effect}}</span>
-      <span *ngIf="move.splattershot?.note">({{move.splattershot?.note}})</span>
-    </p>
-    <button
-      class="splattershot-button"
-      *ngIf="move.splattershot?.clip"
-      (click)="toggleSplattershotClip(move.id)">
-      Press to {{ (splattershotEffectShown[move.id]) ? 'Hide' : 'Show' }} Splattershot Effect Clip
-    </button>
-    <video *ngIf="splattershotEffectShown[move.id]" autoplay loop muted playsinline>
-      <source [src]="'/assets/splattershot-clips/' + move.splattershot?.clip">
-    </video>
+            'good': variation.value.splatBomb.effect === 'LOSES TO',
+            'bad': variation.value.splatBomb.effect === 'BEATS',
+            'neutral': variation.value.splatBomb.effect === 'TRADES WITH' || variation.value.splatBomb.effect === 'PASSES THROUGH'
+          }">{{variation.value.splatBomb.effect}}</span> Splat Bomb
+          <span *ngIf="variation.value.splatBomb.note">({{variation.value.splatBomb.note}})</span>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div *ngIf="move.splattershot" class="splattershot">
+      <p class="splattershot-text">
+        <strong>Splattershot ({{move.splattershot?.effect}}) Effect</strong>
+        <span>— {{move.splattershot?.label?.effect}}</span>
+        <span *ngIf="move.splattershot?.note">({{move.splattershot?.note}})</span>
+      </p>
+      <button
+        class="splattershot-button"
+        *ngIf="move.splattershot?.clip"
+        (click)="toggleSplattershotClip(move.id)">
+        Press to {{ (splattershotEffectShown[move.id]) ? 'Hide' : 'Show' }} Splattershot Effect Clip
+      </button>
+      <video *ngIf="splattershotEffectShown[move.id]" autoplay loop muted playsinline>
+        <source [src]="'/assets/splattershot-clips/' + move.splattershot?.clip">
+      </video>
+    </div>
+    <div *ngIf="move.splatBomb" class="splat-bomb">
+      <p class="splat-bomb-text">
+      </p>
+    </div>
   </div>
 </div>

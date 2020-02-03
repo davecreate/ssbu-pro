@@ -22,6 +22,11 @@ export class HintMoveInteractionsComponent implements OnInit {
     return move.name;
   }
 
+  log(msg) {
+    console.log(msg);
+    return "";
+  }
+
   toggleSplattershotClip(moveId: string) {
     this.splattershotEffectShown[moveId] = !this.splattershotEffectShown[moveId];
   }

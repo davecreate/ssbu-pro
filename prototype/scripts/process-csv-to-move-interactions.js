@@ -71,20 +71,30 @@ const loadAndSaveMoveInteractionsData = async () => {
   createReadStream('csv/SSBU Pro Data - Inkling (Enemy Moves) Interactions.csv')
   .pipe(csv())
   .on('data', (row) => {
-    const prevData = get(moveInteractions, `dataByCharacterId[${row.ID}].data`, {});
     const moveDefaultName = get(movesDictionary, `[${row.MoveId}].name`, '');
     const movePrettyName = get(movesByCharacterDictionary, `[${row.ID}].moves[${row.MoveId}].prettyName`);
     const moveFilename = get(movesByCharacterDictionary, `[${row.ID}].moves[${row.MoveId}].filename`);
-    const splattershotEffect = row.SplattershotEffect;
-    const dashUnderValue = row.CanDashUnder;
 
-    if (
-      (!splattershotEffect || (splattershotEffect && splattershotEffect === 'None'))
-      && !dashUnderValue
-    ) {
-      return;
+    moveInfo = {};
+
+    if (row.CanDashUnder) {
+      moveInfo.dashUnder = {value: row.CanDashUnder === 'Y'};
     }
 
+    if (row.SplatBombEffect) {
+      moveInfo.splatBomb = {
+        effect: row.SplatBombEffect,
+        note: row.SplatBombNote,
+        clip: row.SplatbombClip
+      }
+    }
+
+    const prevData = get(moveInteractions, `dataByCharacterId[${row.ID}].data`, {});
+    // TODO: rename MoveNote to Variation?
+    if (prevData[row.MoveId] && prevData[row.MoveId].variations[row.MoveNote]) {
+      console.log("[WARNING] Duplicate variation: " + row.ID + " " + row.MoveId + " " + row.MoveNote)
+    }
+    const prevVariations = get(prevData, `[${row.MoveId}].variations`, {});
     moveInteractions.dataByCharacterId[row.ID] = {
       id: row.ID,
       data: {
@@ -94,25 +104,12 @@ const loadAndSaveMoveInteractionsData = async () => {
           name: moveDefaultName,
           prettyName: movePrettyName,
           filename: moveFilename,
+          variations: {...prevVariations, [row.MoveNote]: moveInfo}
         }
       }
     };
 
-    const dashUnderNote = row.MoveNote;
-
-    if (dashUnderValue) {
-      const prevDashUnder = get(prevData, `[${row.MoveId}].dashUnder`, []);
-      const newDashUnder = {
-        value: dashUnderValue === 'Y',
-        note: dashUnderNote,
-      };
-
-      moveInteractions.dataByCharacterId[row.ID].data[row.MoveId].dashUnder = [
-        ...prevDashUnder,
-        newDashUnder,
-      ];
-    }
-
+    const splattershotEffect = row.SplattershotEffect;
     if (splattershotEffect && splattershotEffect !== 'None') {
       moveInteractions.dataByCharacterId[row.ID].data[row.MoveId].splattershot = {
         effect: splattershotEffect,
