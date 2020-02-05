@@ -2,7 +2,8 @@ RewriteEngine On
 
 # -- Redirection to https (optional):
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# @TODO: Fix safari iOS not playing https videos
+RewriteRule ^((?!\.mp4).)*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d

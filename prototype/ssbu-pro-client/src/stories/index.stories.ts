@@ -87,7 +87,8 @@ const ids = [
   'MII_SWORDFIGHTER',
   'MII_GUNNER',
   'BANJO_AND_KAZOOIE',
-  'TERRY'
+  'TERRY',
+  'BYLETH'
 ].filter((id) => {
   return id !== 'POKEMON_TRAINER_SQUIRTLE'
   && id !== 'POKEMON_TRAINER_IVYSAUR'
