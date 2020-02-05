@@ -43,7 +43,7 @@
         Press to {{ (splattershotEffectShown[move.id]) ? 'Hide' : 'Show' }} Splattershot Effect Clip
       </button>
       <video *ngIf="splattershotEffectShown[move.id]" autoplay loop muted playsinline>
-        <source [src]="'/assets/splattershot-clips/' + move.splattershot?.clip">
+        <source [src]="'http://ssbu.pro/assets/splattershot-clips/' + move.splattershot?.clip">
       </video>
     </div>
     <div *ngIf="move.splatBomb" class="splat-bomb">

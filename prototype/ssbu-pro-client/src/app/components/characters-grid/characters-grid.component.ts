@@ -9,8 +9,6 @@ import {
   NgZone,
   AfterViewInit,
   ChangeDetectorRef,
-  PLATFORM_ID,
-  Inject,
 } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { State } from 'src/app/reducers';
@@ -34,7 +32,6 @@ export class CharactersGridComponent implements OnInit, AfterViewChecked, AfterV
     private store: Store<State>,
     private zone: NgZone,
     private cd: ChangeDetectorRef,
-    @Inject(PLATFORM_ID) private platform: object,
   ) { }
 
   ngOnInit() {
@@ -44,7 +41,6 @@ export class CharactersGridComponent implements OnInit, AfterViewChecked, AfterV
     this.zone.runOutsideAngular(() => {
       setTimeout(() => {
         this.setBgLinesSize();
-        this.cd.detectChanges();
       }, 0);
     });
   }
@@ -53,7 +49,6 @@ export class CharactersGridComponent implements OnInit, AfterViewChecked, AfterV
     this.zone.runOutsideAngular(() => {
       setTimeout(() => {
         this.setBgLinesSize();
-        this.cd.detectChanges();
       }, 0);
     });
   }
@@ -65,6 +60,9 @@ export class CharactersGridComponent implements OnInit, AfterViewChecked, AfterV
       this.bgLineWidth = ((6 - moduloEntry) * 0.5) * gridElementWidth;
       this.bgLineHeight = this.characterEntry.first.nativeElement.offsetHeight;
     }
+
+    // Make sure the black lines are updated
+    this.cd.detectChanges();
   }
 
   dasherizedUrl(id: string) {

@@ -153,15 +153,15 @@
   },
   "POKEMON_TRAINER_SQUIRTLE": {
     "id": "POKEMON_TRAINER_SQUIRTLE",
-    "name": "Squirtle"
+    "name": "Pokemon Trainer (Squirtle)"
   },
   "POKEMON_TRAINER_IVYSAUR": {
     "id": "POKEMON_TRAINER_IVYSAUR",
-    "name": "Ivysaur"
+    "name": "Pokemon Trainer (Ivysaur)"
   },
   "POKEMON_TRAINER_CHARIZARD": {
     "id": "POKEMON_TRAINER_CHARIZARD",
-    "name": "Charizard"
+    "name": "Pokemon Trainer (Charizard)"
   },
   "DIDDY_KONG": {
     "id": "DIDDY_KONG",
@@ -222,18 +222,6 @@
   "GRENINJA": {
     "id": "GRENINJA",
     "name": "Greninja"
-  },
-  "MII_BRAWLER": {
-    "id": "MII_BRAWLER",
-    "name": "Mii Brawler"
-  },
-  "MII_SWORDFIGHTER": {
-    "id": "MII_SWORDFIGHTER",
-    "name": "Mii Swordfighter"
-  },
-  "MII_GUNNER": {
-    "id": "MII_GUNNER",
-    "name": "Mii Gunner"
   },
   "PALUTENA": {
     "id": "PALUTENA",
@@ -326,5 +314,21 @@
   "TERRY": {
     "id": "TERRY",
     "name": "Terry"
+  },
+  "BYLETH": {
+    "id": "BYLETH",
+    "name": "Byleth"
+  },
+  "MII_BRAWLER": {
+    "id": "MII_BRAWLER",
+    "name": "Mii Brawler"
+  },
+  "MII_SWORDFIGHTER": {
+    "id": "MII_SWORDFIGHTER",
+    "name": "Mii Swordfighter"
+  },
+  "MII_GUNNER": {
+    "id": "MII_GUNNER",
+    "name": "Mii Gunner"
   }
 }
